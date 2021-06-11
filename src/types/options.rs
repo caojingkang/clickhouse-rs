@@ -251,7 +251,7 @@ impl Default for Options {
             connection_timeout: Duration::from_millis(500),
             query_timeout: Duration::from_secs(180),
             insert_timeout: Some(Duration::from_secs(180)),
-            execute_timeout: Some(Duration::from_secs(180)),
+            execute_timeout: Some(Duration::from_secs(3600)),
             #[cfg(feature = "tls")]
             secure: false,
             #[cfg(feature = "tls")]
