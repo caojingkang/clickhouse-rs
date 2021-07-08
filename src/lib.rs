@@ -456,7 +456,7 @@ impl ClientHandle {
         with_timeout(
             async {
                 self.wrap_future(move |c| {
-                    // info!("[insert]     {}", query.get_sql());
+                    info!("[insert]     {}", query.get_sql());
                     let transport = c.inner.take().unwrap();
 
                     async move {
